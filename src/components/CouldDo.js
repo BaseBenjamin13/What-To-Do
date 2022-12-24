@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 
+import Input from './Input';
+
 function CouldDo() {
 
+    const inputs = [<Input/>, <Input />];
     const [couldDos, setCouldDos] = useState([])
 
     return (
         <div>
             <form >
-                <label htmlFor="coulddo">Could Do: </label>
-                <input type="text" id="coulddo"></input>
-                <br></br>
+                {inputs.map((input) => { 
+                    return input
+                })}
 
             </form>
         </div>
