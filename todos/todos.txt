@@ -1,0 +1,4 @@
+
+✅ make input component.
+
+inside form, map through inputs

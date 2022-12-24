@@ -1,28 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function CouldDo() {
-  return (
-    <div>
-         <form >
-            <label htmlFor="coulddo">Could Do: </label>
-            <input type="text" id="coulddo"></input>
-            <br></br>
 
-            <label htmlFor="coulddo">Could Do: </label>
-            <input type="text" id="coulddo"></input>
-            <br></br>
+    const [couldDos, setCouldDos] = useState([])
 
-            <label htmlFor="coulddo">Could Do: </label>
-            <input type="text" id="coulddo"></input>
-            <br></br>
+    return (
+        <div>
+            <form >
+                <label htmlFor="coulddo">Could Do: </label>
+                <input type="text" id="coulddo"></input>
+                <br></br>
 
-            <label htmlFor="coulddo">Could Do: </label>
-            <input type="text" id="coulddo"></input>
-            <br></br>
-
-        </form>
-    </div>
-  )
+            </form>
+        </div>
+    )
 }
 
 export default CouldDo
