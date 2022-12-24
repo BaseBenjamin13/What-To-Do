@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-import Input from './Input';
+import Input from './inputs/Input';
+import AddInput from './inputs/AddInput';
 
 function CouldDo() {
 
-    const inputs = [<Input/>, <Input />];
+    const [inputs, setInputs] = useState([<Input/>, <Input />]);
     const [couldDos, setCouldDos] = useState([])
 
     return (
@@ -13,6 +14,7 @@ function CouldDo() {
                 {inputs.map((input) => { 
                     return input
                 })}
+                <AddInput inputs={inputs} setInputs={setInputs} />
 
             </form>
         </div>
