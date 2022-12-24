@@ -9,7 +9,7 @@ function RemoveInput({ inputs, setInputs }) {
 
   return (
     <div>
-        <button onClick={removeInput}>-</button>
+        <button className="remove-input-btn" onClick={removeInput}>-</button>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../style/CouldDo.css';
 
 import Input from './inputs/Input';
 import AddInput from './inputs/AddInput';
@@ -10,13 +11,15 @@ function CouldDo() {
     const [couldDos, setCouldDos] = useState([])
 
     return (
-        <div>
+        <div className="coulddo-container">
             <form >
                 {inputs.map((input) => { 
                     return input
                 })}
-                <AddInput inputs={inputs} setInputs={setInputs} />
-                <RemoveInput inputs={inputs} setInputs={setInputs} />
+                <div className="input-btns-container">
+                    <AddInput inputs={inputs} setInputs={setInputs} />
+                    <RemoveInput inputs={inputs} setInputs={setInputs} />
+                </div>
 
             </form>
         </div>

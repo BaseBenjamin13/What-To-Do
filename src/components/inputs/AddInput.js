@@ -10,7 +10,7 @@ function AddInput({ inputs, setInputs }) {
 
   return (
     <div>
-        <button onClick={addInput}>+</button>
+        <button className="add-input-btn" onClick={addInput}>+</button>
     </div>
   )
 }

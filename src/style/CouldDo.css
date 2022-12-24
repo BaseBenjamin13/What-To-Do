@@ -1,0 +1,32 @@
+
+.coulddo-container {
+    width: 20%;
+    border: 3px solid black;
+    display:flex;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-btns-container {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.add-input-btn {
+    background-color: #04BF55;
+    margin: 5px;
+    width: 5rem;
+    height: auto;
+    font-size: 2rem;
+}
+.remove-input-btn {
+    background-color: #D90D1E;
+    margin: 5px;
+    width: 5rem;
+    height: auto;
+    font-size: 2rem;
+}
