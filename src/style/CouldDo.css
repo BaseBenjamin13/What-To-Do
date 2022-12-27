@@ -15,22 +15,26 @@
 .input-btns-container {
     display: flex;
     justify-content: center;
-    margin: 5px;
+    margin: 1rem;
 }
 
 .add-input-btn {
-    background-color: #04BF55;
-    margin: 5px;
+    background-color: #05C7F2;
     width: 5rem;
     height: auto;
     font-size: 2rem;
+    border-radius: 50px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 .remove-input-btn {
-    background-color: #D90D1E;
-    margin: 5px;
+    background-color: #BF1111;
     width: 5rem;
     height: auto;
     font-size: 2rem;
+    border-radius: 50px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
 }
 .add-input-btn:hover, .remove-input-btn:hover {
     border-style: inset;
