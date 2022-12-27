@@ -9,11 +9,10 @@ function App() {
 
     const [doThis, setDoThis] = useState()
 
-    const handleSubmit = async(e, couldDos) => {
+    const handleSubmit = (e, couldDos) => {
         e.preventDefault();
         const randomIndex = Math.floor(Math.random() * couldDos.length);
-        await setDoThis(couldDos[randomIndex]);
-        console.log(doThis);
+        setDoThis(couldDos[randomIndex]);
     }
 
   return (

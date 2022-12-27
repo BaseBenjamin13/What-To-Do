@@ -16,7 +16,6 @@ function CouldDo({ handleSubmit, doThis }) {
         const values = [...couldDos];
         values[index] = e.target.value;
         setCouldDos(values);
-        console.log(couldDos);
     };
 
     return (
