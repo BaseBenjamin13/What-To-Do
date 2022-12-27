@@ -5,11 +5,11 @@ import Input from './inputs/Input';
 import AddInput from './inputs/AddInput';
 import RemoveInput from './inputs/RemoveInput';
 
-function CouldDo() {
+function CouldDo({ handleSubmit, doThis }) {
 
     const [inputs, setInputs] = useState([<Input/>, <Input />]);
     const [couldDos, setCouldDos] = useState([])
-    const [doThis, setDoThis] = useState()
+    
 
     const handleChange = (e, index) => {
         e.preventDefault();
@@ -19,18 +19,14 @@ function CouldDo() {
         console.log(couldDos);
     };
 
-    const handleSubmit = async(e) => {
-        e.preventDefault();
-        const randomIndex = Math.floor(Math.random() * couldDos.length);
-        await setDoThis(couldDos[randomIndex]);
-        console.log(doThis);
-    }
-
     return (
         <div className="coulddo-container">
-            <form onSubmit={handleSubmit}>
+
+
+
+            <form onSubmit={(e) => handleSubmit(e, couldDos)}>
                 {inputs.map((input, i) => {
-                    return <Input value={couldDos[i]} handleChange={handleChange} index={i} />
+                    return <Input key={i} value={couldDos[i]} handleChange={handleChange} index={i} />
                 })}
                 <div className="input-btns-container">
                     <AddInput inputs={inputs} setInputs={setInputs} />

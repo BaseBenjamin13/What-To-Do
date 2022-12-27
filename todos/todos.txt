@@ -2,3 +2,8 @@
 ✅ make input component.
 
 ✅ inside form, map through inputs
+
+BUG: if user adds input, clicks submit and then removes input, 
+    it will still be in the couldDos array. 
+    meaning theres still a chance for the doThis value to ba a removed value.
+    COULD FIX: when user removes input, that input value should also be removed from couldDos.
