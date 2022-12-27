@@ -36,6 +36,15 @@
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
 }
-.add-input-btn:hover, .remove-input-btn:hover {
+
+.submit-btn {
+    background-color: #05C7F2;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 5px  #260259;
+    border-radius: 50px;
+}
+
+.add-input-btn:hover, .remove-input-btn:hover, .submit-btn:hover {
     border-style: inset;
 }
